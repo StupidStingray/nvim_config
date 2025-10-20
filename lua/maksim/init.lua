@@ -1,2 +1,2 @@
 require("maksim.remap")
-print("hello")
+require("maksim.set")
