@@ -84,6 +84,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\maksim.orlov\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["indent-blankline.nvim"] = {
+    config = { "\27LJ\2\nå\1\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\fexclude\rbuftypes\1\4\0\0\vnofile\vprompt\rterminal\14filetypes\1\0\2\14filetypes\0\rbuftypes\0\1\4\0\0\thelp\rterminal\rNvimTree\vindent\1\0\2\fexclude\0\vindent\0\1\0\1\tchar\bâ”‚\nsetup\bibl\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\maksim.orlov\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   kanagawa = {
     config = { "\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\0" },
     loaded = true,
@@ -118,6 +124,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: indent-blankline.nvim
+time([[Config for indent-blankline.nvim]], true)
+try_loadstring("\27LJ\2\nå\1\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\fexclude\rbuftypes\1\4\0\0\vnofile\vprompt\rterminal\14filetypes\1\0\2\14filetypes\0\rbuftypes\0\1\4\0\0\thelp\rterminal\rNvimTree\vindent\1\0\2\fexclude\0\vindent\0\1\0\1\tchar\bâ”‚\nsetup\bibl\frequire\0", "config", "indent-blankline.nvim")
+time([[Config for indent-blankline.nvim]], false)
 -- Config for: kanagawa
 time([[Config for kanagawa]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\0", "config", "kanagawa")
