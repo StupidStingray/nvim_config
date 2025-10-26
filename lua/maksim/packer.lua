@@ -49,24 +49,24 @@ return require('packer').startup(function(use)
 				  }
 		  end
   }
-  use {
-		  'VonHeikemen/lsp-zero.nvim',
-		  requires = {
+  use 'williamboman/mason.nvim'
 
-				  -- Required dependencies (lsp-zero configures these)
-				  {'neovim/nvim-lspconfig'},
-				  {'williamboman/mason.nvim'},
-				  { 'williamboman/mason-lspconfig.nvim' },
+  -- LSP Configuration: Provides default configurations (e.g., pyright.setup)
+  use 'neovim/nvim-lspconfig'
 
-				  -- Autocompletion Engine (lsp-zero configures it for you)
-				  { 'hrsh7th/nvim-cmp' },
-				  { 'hrsh7th/cmp-buffer' },
+  -- LSP Bridge: Links Mason's installed servers to Lspconfig's setup
+  use 'williamboman/mason-lspconfig.nvim'
 
-				  { 'hrsh7th/cmp-path' },
-				  { 'hrsh7th/cmp-nvim-lsp' },
-				  { 'L3MON4D3/LuaSnip' },
-		  }
-  }
+  -- Autocompletion Engine
+  use 'hrsh7th/nvim-cmp'
 
+  -- LSP Source for nvim-cmp
+  use 'hrsh7th/cmp-nvim-lsp' 
+
+  -- Snippet Engine
+  use 'L3MON4D3/LuaSnip'
+
+  -- Optional: Snippet source (recommended)
+  use 'saadparwaiz1/cmp_luasnip'
   end)
 
