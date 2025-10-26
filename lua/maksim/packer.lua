@@ -49,5 +49,24 @@ return require('packer').startup(function(use)
 				  }
 		  end
   }
+  use {
+		  'VonHeikemen/lsp-zero.nvim',
+		  requires = {
+
+				  -- Required dependencies (lsp-zero configures these)
+				  {'neovim/nvim-lspconfig'},
+				  {'williamboman/mason.nvim'},
+				  { 'williamboman/mason-lspconfig.nvim' },
+
+				  -- Autocompletion Engine (lsp-zero configures it for you)
+				  { 'hrsh7th/nvim-cmp' },
+				  { 'hrsh7th/cmp-buffer' },
+
+				  { 'hrsh7th/cmp-path' },
+				  { 'hrsh7th/cmp-nvim-lsp' },
+				  { 'L3MON4D3/LuaSnip' },
+		  }
+  }
+
   end)
 
